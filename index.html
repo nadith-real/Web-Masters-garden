@@ -469,7 +469,7 @@
               <p class="text-white font-medium">Premium fashion store</p>
               <p class="text-gray-500 text-sm">Next.js • Shopify • Tailwind</p>
             </div>
-            <span class="text-garden-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">View Case →</span>
+            <a href="case-lumina-fashion.html" class="text-garden-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity hover:underline">View Case →</a>
           </div>
         </div>
 
@@ -493,7 +493,7 @@
               <p class="text-white font-medium">Real-time data platform</p>
               <p class="text-gray-500 text-sm">React • Node.js • PostgreSQL</p>
             </div>
-            <span class="text-garden-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">View Case →</span>
+            <a href="case-nova-analytics.html" class="text-garden-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity hover:underline">View Case →</a>
           </div>
         </div>
 
@@ -517,7 +517,7 @@
               <p class="text-white font-medium">Luxury real estate portal</p>
               <p class="text-gray-500 text-sm">WordPress • Custom Theme</p>
             </div>
-            <span class="text-garden-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">View Case →</span>
+            <a href="case-evergreen-realty.html" class="text-garden-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity hover:underline">View Case →</a>
           </div>
         </div>
 
@@ -541,7 +541,7 @@
               <p class="text-white font-medium">Fitness studio platform</p>
               <p class="text-gray-500 text-sm">Vue • Firebase • Stripe</p>
             </div>
-            <span class="text-garden-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">View Case →</span>
+            <a href="case-pulse-fitness.html" class="text-garden-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity hover:underline">View Case →</a>
           </div>
         </div>
       </div>
@@ -654,44 +654,15 @@
         <p class="text-garden-400 font-medium text-sm tracking-widest uppercase mb-3">Get in Touch</p>
         <h2 class="font-display text-4xl sm:text-5xl font-bold text-white mb-6">Let's start something great</h2>
         <p class="text-gray-400 text-lg mb-12 leading-relaxed max-w-2xl mx-auto">
-          Ready to grow your digital presence? Fill in the form and we'll get back to you, or call us directly.
+          Ready to grow your digital presence? Call us directly and let's discuss your project.
         </p>
 
+        <!-- Contact form hidden: no backend configured. Interactions use the phone link below. -->
+        <!--
         <form id="contactForm" class="max-w-xl mx-auto mb-10 text-left">
-          <div class="grid sm:grid-cols-2 gap-5">
-            <div>
-              <label for="cf-name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
-              <input id="cf-name" name="name" type="text" required
-                class="w-full px-4 py-3 rounded-xl bg-dark-800/60 border border-white/10 focus:border-garden-500 focus:ring-1 focus:ring-garden-500 outline-none text-white placeholder-gray-500 transition"
-                placeholder="Your name" />
-            </div>
-            <div>
-              <label for="cf-email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
-              <input id="cf-email" name="email" type="email" required
-                class="w-full px-4 py-3 rounded-xl bg-dark-800/60 border border-white/10 focus:border-garden-500 focus:ring-1 focus:ring-garden-500 outline-none text-white placeholder-gray-500 transition"
-                placeholder="you@example.com" />
-            </div>
-          </div>
-          <div class="mt-5">
-            <label for="cf-phone" class="block text-sm font-medium text-gray-300 mb-2">Phone (optional)</label>
-            <input id="cf-phone" name="phone" type="tel"
-              class="w-full px-4 py-3 rounded-xl bg-dark-800/60 border border-white/10 focus:border-garden-500 focus:ring-1 focus:ring-garden-500 outline-none text-white placeholder-gray-500 transition"
-              placeholder="+94 70 000 0000" />
-          </div>
-          <div class="mt-5">
-            <label for="cf-message" class="block text-sm font-medium text-gray-300 mb-2">Project details</label>
-            <textarea id="cf-message" name="message" rows="4" required
-              class="w-full px-4 py-3 rounded-xl bg-dark-800/60 border border-white/10 focus:border-garden-500 focus:ring-1 focus:ring-garden-500 outline-none text-white placeholder-gray-500 resize-none transition"
-              placeholder="Tell us about your project..."></textarea>
-          </div>
-          <button type="submit" class="btn-primary mt-5 inline-flex items-center gap-2 px-8 py-4 rounded-full bg-garden-500 hover:bg-garden-400 text-dark-900 font-semibold transition-all shadow-xl shadow-garden-500/25 hover:shadow-garden-500/40">
-            Send Message
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-            </svg>
-          </button>
-          <p id="cf-status" class="sr-only" role="status" aria-live="polite"></p>
+          ...
         </form>
+        -->
 
         <a href="tel:+94701009029" class="btn-primary inline-flex items-center gap-3 px-10 py-5 rounded-full bg-garden-500 hover:bg-garden-400 text-dark-900 font-semibold text-lg transition-all shadow-xl shadow-garden-500/25 hover:shadow-garden-500/40 mb-10">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -833,7 +804,9 @@
       });
     }
 
-    // Contact form — graceful feedback (no backend configured)
+    // Contact form — intentionally disabled (no backend configured).
+    // Interactions rely on the phone link in the contact section instead.
+    /*
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
       contactForm.addEventListener('submit', (e) => {
@@ -848,6 +821,7 @@
         }, 5000);
       });
     }
+    */
   </script>
 </body>
 </html>
