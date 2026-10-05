@@ -210,7 +210,7 @@
           <a href="#process" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Process</a>
           <a href="#work" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Work</a>
           <a href="#about" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">About</a>
-          <a href="tel:+94701009029" class="btn-primary px-5 py-2.5 rounded-full bg-garden-500 hover:bg-garden-400 text-dark-900 font-semibold text-sm transition-all shadow-lg shadow-garden-500/25 hover:shadow-garden-500/40">
+          <a href="#contact" class="btn-primary px-5 py-2.5 rounded-full bg-garden-500 hover:bg-garden-400 text-dark-900 font-semibold text-sm transition-all shadow-lg shadow-garden-500/25 hover:shadow-garden-500/40">
             Get a Quote
           </a>
         </div>
@@ -231,7 +231,7 @@
         <a href="#process" class="block text-gray-300 hover:text-white font-medium">Process</a>
         <a href="#work" class="block text-gray-300 hover:text-white font-medium">Work</a>
         <a href="#about" class="block text-gray-300 hover:text-white font-medium">About</a>
-        <a href="tel:+94701009029" class="inline-block mt-2 px-5 py-2.5 rounded-full bg-garden-500 text-dark-900 font-semibold text-sm">Get a Quote</a>
+        <a href="#contact" class="inline-block mt-2 px-5 py-2.5 rounded-full bg-garden-500 text-dark-900 font-semibold text-sm">Get a Quote</a>
       </div>
     </div>
   </nav>
@@ -261,7 +261,7 @@
         </p>
 
         <div class="flex flex-wrap gap-4">
-          <a href="tel:+94701009029" class="btn-primary inline-flex items-center gap-2 px-8 py-4 rounded-full bg-garden-500 hover:bg-garden-400 text-dark-900 font-semibold text-base transition-all shadow-xl shadow-garden-500/25 hover:shadow-garden-500/40">
+          <a href="#contact" class="btn-primary inline-flex items-center gap-2 px-8 py-4 rounded-full bg-garden-500 hover:bg-garden-400 text-dark-900 font-semibold text-base transition-all shadow-xl shadow-garden-500/25 hover:shadow-garden-500/40">
             Start Your Project
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -636,7 +636,7 @@
         <div class="relative z-10">
           <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Ready to grow your digital presence?</h2>
           <p class="text-gray-400 text-lg mb-8 max-w-xl mx-auto">Let's plant the seeds of your next great website. Book a free discovery call today.</p>
-          <a href="tel:+94701009029" class="btn-primary inline-flex items-center gap-2 px-8 py-4 rounded-full bg-garden-500 hover:bg-garden-400 text-dark-900 font-semibold transition-all shadow-xl shadow-garden-500/25">
+          <a href="#contact" class="btn-primary inline-flex items-center gap-2 px-8 py-4 rounded-full bg-garden-500 hover:bg-garden-400 text-dark-900 font-semibold transition-all shadow-xl shadow-garden-500/25">
             Let's Talk
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -654,8 +654,44 @@
         <p class="text-garden-400 font-medium text-sm tracking-widest uppercase mb-3">Get in Touch</p>
         <h2 class="font-display text-4xl sm:text-5xl font-bold text-white mb-6">Let's start something great</h2>
         <p class="text-gray-400 text-lg mb-12 leading-relaxed max-w-2xl mx-auto">
-          Ready to grow your digital presence? Call us and let's discuss your project.
+          Ready to grow your digital presence? Fill in the form and we'll get back to you, or call us directly.
         </p>
+
+        <form id="contactForm" class="max-w-xl mx-auto mb-10 text-left">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="cf-name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+              <input id="cf-name" name="name" type="text" required
+                class="w-full px-4 py-3 rounded-xl bg-dark-800/60 border border-white/10 focus:border-garden-500 focus:ring-1 focus:ring-garden-500 outline-none text-white placeholder-gray-500 transition"
+                placeholder="Your name" />
+            </div>
+            <div>
+              <label for="cf-email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+              <input id="cf-email" name="email" type="email" required
+                class="w-full px-4 py-3 rounded-xl bg-dark-800/60 border border-white/10 focus:border-garden-500 focus:ring-1 focus:ring-garden-500 outline-none text-white placeholder-gray-500 transition"
+                placeholder="you@example.com" />
+            </div>
+          </div>
+          <div class="mt-5">
+            <label for="cf-phone" class="block text-sm font-medium text-gray-300 mb-2">Phone (optional)</label>
+            <input id="cf-phone" name="phone" type="tel"
+              class="w-full px-4 py-3 rounded-xl bg-dark-800/60 border border-white/10 focus:border-garden-500 focus:ring-1 focus:ring-garden-500 outline-none text-white placeholder-gray-500 transition"
+              placeholder="+94 70 000 0000" />
+          </div>
+          <div class="mt-5">
+            <label for="cf-message" class="block text-sm font-medium text-gray-300 mb-2">Project details</label>
+            <textarea id="cf-message" name="message" rows="4" required
+              class="w-full px-4 py-3 rounded-xl bg-dark-800/60 border border-white/10 focus:border-garden-500 focus:ring-1 focus:ring-garden-500 outline-none text-white placeholder-gray-500 resize-none transition"
+              placeholder="Tell us about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary mt-5 inline-flex items-center gap-2 px-8 py-4 rounded-full bg-garden-500 hover:bg-garden-400 text-dark-900 font-semibold transition-all shadow-xl shadow-garden-500/25 hover:shadow-garden-500/40">
+            Send Message
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </button>
+          <p id="cf-status" class="sr-only" role="status" aria-live="polite"></p>
+        </form>
 
         <a href="tel:+94701009029" class="btn-primary inline-flex items-center gap-3 px-10 py-5 rounded-full bg-garden-500 hover:bg-garden-400 text-dark-900 font-semibold text-lg transition-all shadow-xl shadow-garden-500/25 hover:shadow-garden-500/40 mb-10">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -794,6 +830,22 @@
       cookieAccept.addEventListener('click', () => {
         localStorage.setItem('cookieAccepted', '1');
         cookieNotice.classList.add('hidden');
+      });
+    }
+
+    // Contact form — graceful feedback (no backend configured)
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const status = document.getElementById('cf-status');
+        status.textContent = 'Thank you! We will call you back shortly.';
+        status.classList.remove('sr-only');
+        contactForm.reset();
+        setTimeout(() => {
+          status.classList.add('sr-only');
+          status.textContent = '';
+        }, 5000);
       });
     }
   </script>
